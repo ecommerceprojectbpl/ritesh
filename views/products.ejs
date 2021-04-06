@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/productsStyling/products.css">
+</head>
+<body>
+  <div id="back">
+    <% include ./WebNavBarPartials/WebNavBarPartials.ejs %>
+
+    <nav id="mobNav">
+      <div class="logo1">
+          <img id="bars" src="../images/otpimage/Group 5001 Mob.png" alt="">
+          <a href="/homepage"><img id="logo" src="../images/otpimage/ideaa.png" alt=""></a>
+      </div>
+      <div class="icons1">
+              <img id="search" src="../images/otpimage/Icon feather-search Mob.png" alt="">
+              <img id="book" src="../images/otpimage/Icon feather-bookmark Mob.png" alt="">
+              <img id="book" src="../images/otpimage/Icon feather-shopping-bag Mob.png" alt="">
+      </div>
+    </nav>
+    <div id="mainPage">
+      <div id="top">
+        <div id="tTop">
+          <h2>Jai hind Bro <span>- 1200 items</span></h2>
+        </div>
+        <div id="tBottom">
+          <div id="leftSide">
+            <h4>FILTERS</h4>
+            <a href="/products"><h6>CLEAR ALL</h6></a>
+          </div>
+          <div id="rightSide">
+            <div id="sizePanel">
+              <button id="bmtn" onclick="myFunction()">
+                Size<i id="arrow" class="ri-arrow-right-s-line"></i>
+              </button>
+              <div class="sizes">
+                <div class="children">
+                  <h5><input type="checkbox" />S</h5>
+                  <h5><input type="checkbox" />M</h5>
+                  <h5><input type="checkbox" />L</h5>
+                  <h5><input type="checkbox" />XL</h5>
+                  <h5><input type="checkbox" />XXL</h5>
+                  <h5><input type="checkbox" />XXXL</h5>
+                </div>
+              </div>
+            </div>
+            <!-- <div onmouseover="bigrecommend(y)" onmouseout="normalrecommend(y)" class="recommend">
+              <h3>
+                Sort by : <span>recommended</span
+                ><i id="direct" class="ri-arrow-down-s-line"></i>
+              </h3>
+              <div class="price">
+                <h4 class="text">price : high to low</h4>
+              </div>
+              <div class="price">
+                <h4 class="text1">price : low to high</h4>
+              </div>
+              <div class="price">
+                <h4 class="text2">By popularity</h4>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div id="bottomLeft">
+          <h4>BHARAT KI PEHCHAN</h4>
+          <div id="Tabs">
+            <a href="outlines-of-maps">
+              <div class="tab">
+                <h5>Outlines of Maps</h5>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+            </a>
+            <a href="outlines-of-maps">
+              <div class="tab">
+                <h5>Outlines of Maps</h5>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+            </a>
+            <a href="outlines-of-maps">
+              <div class="tab">
+                <h5>Monuments</h5>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+            </a>
+            <a href="outlines-of-maps">
+              <div class="tab">
+                <h5>Shifuji's Quotes</h5>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+            </a>
+            <a href="outlines-of-maps">
+              <div class="tab">
+                <h5>Forgotten Troops</h5>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+            </a>
+            <a href="outlines-of-maps">
+              <div class="tab">
+                <h5>Incidents</h5>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+            </a>
+            <a href="outlines-of-maps">
+              <div class="tab">
+                <h5>Meri Mitti(art forms)</h5>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+            </a>
+            <a href="outlines-of-maps">
+              <div class="tab">
+                <h5>#</h5>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="bottomRight">
+          <div class="prdctvertical">
+            <div class="prdct">
+             <a href="/productInner">
+              <div class="prdctMain">
+                <div class="prdctImage">
+                  <img src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=661&q=80" alt="">
+                </div>
+                <h3>Printed with 2 Faces</h3>
+                <h5>Rs. 600</h5>
+              </div>
+             </a>
+            </div>
+            <div class="prdct">
+              <a href="#">
+               <div class="prdctMain">
+                 <div class="prdctImage">
+                   <img src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=661&q=80" alt="">
+                 </div>
+                 <h3>Printed with 2 Faces</h3>
+                 <h5>Rs. 600</h5>
+               </div>
+              </a>
+             </div>
+             <div class="prdct">
+              <a href="#">
+               <div class="prdctMain">
+                 <div class="prdctImage">
+                   <img src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=661&q=80" alt="">
+                 </div>
+                 <h3>Printed with 2 Faces</h3>
+                 <h5>Rs. 600</h5>
+               </div>
+              </a>
+             </div>
+             <div id="prdctLast" class="prdct">
+              <a href="#">
+               <div class="prdctMain">
+                 <div class="prdctImage">
+                   <img src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=661&q=80" alt="">
+                 </div>
+                 <h3>Printed with 2 Faces</h3>
+                 <h5>Rs. 600</h5>
+               </div>
+              </a>
+             </div>
+          </div>
+          <div class="prdctvertical">
+            <div class="prdct">
+             <a href="/productInner">
+              <div class="prdctMain">
+                <div class="prdctImage">
+                  <img src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=661&q=80" alt="">
+                </div>
+                <h3>Printed with 2 Faces</h3>
+                <h5>Rs. 600</h5>
+              </div>
+             </a>
+            </div>
+            <div class="prdct">
+              <a href="/productInner">
+               <div class="prdctMain">
+                 <div class="prdctImage">
+                   <img src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=661&q=80" alt="">
+                 </div>
+                 <h3>Printed with 2 Faces</h3>
+                 <h5>Rs. 600</h5>
+               </div>
+              </a>
+             </div>
+             <div class="prdct">
+              <a href="/productInner">
+               <div class="prdctMain">
+                 <div class="prdctImage">
+                   <img src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=661&q=80" alt="">
+                 </div>
+                 <h3>Printed with 2 Faces</h3>
+                 <h5>Rs. 600</h5>
+               </div>
+              </a>
+             </div>
+             <div id="prdctLast" class="prdct">
+              <a href="/productInner">
+               <div class="prdctMain">
+                 <div class="prdctImage">
+                   <img src="https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=661&q=80" alt="">
+                 </div>
+                 <h3>Printed with 2 Faces</h3>
+                 <h5>Rs. 600</h5>
+               </div>
+              </a>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../javascripts/products.js"></script>
+</body>
+</html>
